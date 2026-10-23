@@ -6,7 +6,7 @@ export class homePage{
 readonly page : Page;
 readonly apparelShoes: Locator;
 readonly blueJeansLink: Locator;
-readonly inputQty: Locator;
+//readonly inputQty: Locator;
 readonly btnAddToCart: Locator;
 readonly computersLink: Locator;
 readonly searchBox: Locator;
@@ -16,7 +16,7 @@ constructor(page: Page){
 this.page = page;
 this.apparelShoes = page.getByRole('link',{name: 'Apparel & Shoes'}).first();
 this.blueJeansLink = page.getByRole('link',{name:'Blue Jeans', exact: true});
-this.inputQty = page.locator('#addtocart_36_EnteredQuantity');
+//this.inputQty = page.locator('#addtocart_36_EnteredQuantity');
 this.btnAddToCart= page.locator('#add-to-cart-button-36');
 this .computersLink = page.getByRole('link',{name:'Computers'}).first();
 this.searchBox = page.locator('#small-searchterms');
